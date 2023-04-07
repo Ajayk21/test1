@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage("Git Checkout"){
             steps{
-                git branch: 'test1', credentialsId: '@Ajay$IND21', url: 'https://github.com/Ajayk21/test1'
+                git credentialsId: 'e6d28f7b-8331-4f52-89b9-91cbfa013360', url: 'https://github.com/Ajayk21/test1/'
             }
         }
         stage("Maven Build"){
